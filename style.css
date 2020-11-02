@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+.nav-item {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    color: #6aaca4;
+}
+
+.hero {
+    max-height: 30rem;
+}
