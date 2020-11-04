@@ -63,6 +63,11 @@ p {
     margin-top: 0.8rem;
 }
 
+p.skills-label {
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+
 #title-one {
     position: absolute;
     visibility: visible;
@@ -121,6 +126,37 @@ hr.divider {
     width: 5rem;
     border-top: 0.3rem solid #6aaca4;
 
+}
+
+.skills {
+    margin-top: 3rem;
+}
+
+.skills-progress {
+    width: 100%;
+    height: 0.4rem;
+    background: #eee;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.skills-progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #444;
+    border-radius: 0.5rem;
+    transition: all 1s;
+}
+
+.skills-progress span::after {
+    content: attr(data-value);
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    font-size: 0.5rem;
+    color: #777;
 }
 
 
