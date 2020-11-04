@@ -1,21 +1,20 @@
 window.onload = start;
 
-const slideIds = ['slide-one', 'slide-two', 'slide-three'];
-let slideOpacity = ['1', '0', '0'];
-
 function start() {
-    updateVisibility();
-    setInterval(updateVisibility, 3500);
+    updateTitleVisibility();
+    setInterval(updateTitleVisibility, 3000);
 };
 
-function changeSlideVisibility(slideId, opacity) {
-    document.getElementById(slideId).style.opacity = opacity;
+const titleIds = ['title-one', 'title-two', 'title-three'];
+const titleVisibility = ['visible', 'hidden', 'hidden'];
+
+function changeTitleVisibility(titleId, visibility) {
+    document.getElementById(titleId).style.visibility = visibility;
 };
 
-
-function updateVisibility() {
-    for (let i = 0; i < slideIds.length; i++) {
-        changeSlideVisibility(slideIds[i], slideOpacity[i]);
+function updateTitleVisibility() {
+    for (let i = 0; i < titleIds.length; i++) {
+        changeTitleVisibility(titleIds[i], titleVisibility[i]);
     }
-    slideOpacity.unshift(slideOpacity.pop());
+    titleVisibility.unshift(titleVisibility.pop());
 };
