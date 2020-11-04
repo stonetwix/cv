@@ -5,6 +5,10 @@ function start() {
     setInterval(updateTitleVisibility, 3000);
 };
 
+$(document).on('scroll', function() {
+    setTimeout(moveProgressBars, 500);
+});
+
 const titleIds = ['title-one', 'title-two', 'title-three'];
 const titleVisibility = ['visible', 'hidden', 'hidden'];
 
@@ -17,4 +21,14 @@ function updateTitleVisibility() {
         changeTitleVisibility(titleIds[i], titleVisibility[i]);
     }
     titleVisibility.unshift(titleVisibility.pop());
+};
+
+
+
+function moveProgressBars() {
+    const widths = ['85%', '50%', '98%', '70%'];
+    const bars = document.querySelectorAll('.skills-progress > span');
+    for (let i = 0; i < bars.length; i++) {
+        bars[i].style.width = widths[i];
+    }
 };
