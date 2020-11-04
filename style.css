@@ -27,21 +27,6 @@ body {
     width: 100%;
 }
 
-#slide-one {
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
-}
-
-#slide-two {
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
-}
-
-#slide-three {
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
-}
-
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -59,8 +44,6 @@ h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     margin-top: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 25rem;
 }
 
@@ -69,7 +52,6 @@ h5 {
     visibility: visible;
     animation-name: rotate;
     animation-duration: 0.5s;
-    ani
 }
 
 #title-two {
@@ -89,12 +71,35 @@ h5 {
 .col-md-5 {
     z-index: 100;
     position: absolute;
-    margin-top: 15rem;
+    margin-top: 14rem;
 }
 
-.words-wrapper {
-    
+.title-wrapper {
+    border-top: 0.1rem solid #bbb;
+    border-bottom: 0.1rem solid #bbb;
+    width: 12rem;
+    height: 4rem;
+    margin-top: 2rem;
 }
+
+.social {
+    margin-top: 1rem;
+}
+
+.social a {
+    color: #888;
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+.social a:hover {
+    color: black;
+}
+
+
+
+
+
 
 @keyframes rotate {
     0% {
@@ -117,3 +122,4 @@ h5 {
         transform: rotateX(0);
         opacity: 1;
     }
+}
