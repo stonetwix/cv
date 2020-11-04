@@ -6,7 +6,7 @@ function start() {
 };
 
 $(document).on('scroll', function() {
-    setTimeout(moveProgressBars, 500);
+    setTimeout(moveProgressBars, 800);
 });
 
 const titleIds = ['title-one', 'title-two', 'title-three'];
@@ -22,7 +22,6 @@ function updateTitleVisibility() {
     }
     titleVisibility.unshift(titleVisibility.pop());
 };
-
 
 
 function moveProgressBars() {

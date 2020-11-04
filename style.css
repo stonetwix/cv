@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -26,7 +29,7 @@ body {
 
 .hero {
     height: 40rem;
-    background-image: url(assets/slide1.png);
+    background-image: url(assets/bg1.png);
     background-position: center;
     background-size: cover;
 }
@@ -121,6 +124,7 @@ p.skills-label {
 
 img.portrait {
     border-radius: 50%;
+    margin-top: 2rem;
 }
 
 hr.divider {
@@ -162,6 +166,9 @@ hr.divider {
     color: #777;
 }
 
+#experience {
+    background-color: #efefef88;
+}
 
 @keyframes rotate {
     0% {
