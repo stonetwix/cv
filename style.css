@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
+
 body {
     margin: 0;
+    height: 100%;
 }
 
 .nav-item {
@@ -22,9 +24,11 @@ body {
     color: #6aaca4;
 }
 
-.hero img {
-    position: absolute;
-    width: 100%;
+.hero {
+    height: 40rem;
+    background-image: url(assets/slide1.png);
+    background-position: center;
+    background-size: cover;
 }
 
 h1 {
@@ -32,6 +36,12 @@ h1 {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
 }
 
 h4 {
@@ -47,28 +57,35 @@ h5 {
     width: 25rem;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin-top: 0.8rem;
+}
+
 #title-one {
     position: absolute;
     visibility: visible;
     animation-name: rotate;
-    animation-duration: 0.5s;
+    animation-duration: 2s;
 }
 
 #title-two {
     position: absolute;
     visibility: visible;
     animation-name: rotate;
-    animation-duration: 0.5s;
+    animation-duration: 2s;
+
 }
 
 #title-three {
     position: absolute;
     visibility: visible;
     animation-name: rotate;
-    animation-duration: 0.5s;
+    animation-duration: 2s;
 }
 
-.col-md-5 {
+.hero-text {
     z-index: 100;
     position: absolute;
     margin-top: 14rem;
@@ -96,9 +113,15 @@ h5 {
     color: black;
 }
 
+img.portrait {
+    border-radius: 50%;
+}
 
+hr.divider {
+    width: 5rem;
+    border-top: 0.3rem solid #6aaca4;
 
-
+}
 
 
 @keyframes rotate {
@@ -106,18 +129,7 @@ h5 {
         transform: rotateX(-180deg);
         opacity: 0;
     }
-    25% {
-        transform: rotateX(-110deg);
-        opacity: 0.3;
-    }
-    50% {
-        transform: rotateX(-80deg);
-        opacity: 0.5;
-    }
-    75% {
-        transform: rotateX(-40deg);
-        opacity: 0.7;
-    }
+   
     100% {
         transform: rotateX(0);
         opacity: 1;
