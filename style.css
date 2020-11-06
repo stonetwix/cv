@@ -60,6 +60,13 @@ h5 {
     width: 25rem;
 }
 
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    text-transform: uppercase;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -70,6 +77,14 @@ p.skills-label {
     font-weight: 400;
     margin-top: 1.5rem;
     font-size: 0.8rem;
+}
+
+.tag {
+    background-color: #99adab66;
+    padding: 0.8rem;
+    border-radius: 5rem;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
 }
 
 #title-one {
@@ -168,7 +183,9 @@ hr.divider {
 
 #experience {
     background-color: #efefef88;
+    padding-bottom: 5rem;
 }
+
 
 @keyframes rotate {
     0% {
