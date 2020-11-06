@@ -211,10 +211,10 @@ p.filter-title {
 
 .img-overlay {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(255,255,255,0.95);
     color: #35424C;
     opacity: 0;
