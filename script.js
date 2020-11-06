@@ -1,5 +1,6 @@
 window.onload = start;
 
+
 function start() {
     updateTitleVisibility();
     setInterval(updateTitleVisibility, 3000);
@@ -8,11 +9,25 @@ function start() {
 
 function addEventListeners() {
     const overlays = document.querySelectorAll('.img-overlay');
-    for (let i = 0; i < overlays.length; i++) {
-        overlays[i].onmouseover = showImgOverlay;
-        overlays[i].onmouseleave = removeImgOverlay;
+    for (const overlay of overlays) {
+        overlay.onmouseover = showImgOverlay;
+        overlay.onmouseleave = removeImgOverlay;
+        overlay.onclick = (event) => {
+            const target = event.target.dataset['target'];
+            document.getElementById(target).style.display = 'block';
+            document.getElementById('portfolio-items').style.display = 'none';
+        }
     }
-    
+    const buttons = document.querySelectorAll('.portfolio-close-button');
+    for (const button of buttons) {
+        button.onclick = (event) => {
+            document.getElementById('portfolio-items').style.display = 'block';
+            const infos = document.querySelectorAll('.portfolio-info');
+            for (const info of infos) {
+                info.style.display = 'none';
+            }
+        }
+    }
 };
 
 $(document).on('scroll', function() {

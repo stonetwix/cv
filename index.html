@@ -261,75 +261,81 @@
           <hr class="divider">
         </div>
       </div>
-      <div class="row py-5">
-        <div class="filer col-md-12 text-center">
-          <button class="filter">All</button>
-          <button class="filter">Graphic</button>
-          <button class="filter">Web</button>
-        </div>
-      </div>
-      <div class="row py-5">
-        <div class="col-md-4">
-          <img src="assets/klvmat-thumb1.png" class="img-fluid" alt="portfolio item kungälvsmat">
-          <div class="img-overlay vertical-align">
-            <a href="kungalvsmat.html"><i class="fas fa-search-plus"></i></a> 
-            <h6 class="text-center">KungälvsMat</h6>
-            <p class="filter-title text-center">Web Design<p>
+
+      <div id="portfolio-items" class="container">
+        <div class="row py-5">
+          <div class="col-md-4">
+            <img src="assets/klvmat-thumb1.png" class="img-fluid" alt="portfolio item kungälvsmat">
+            <div data-target="kungalvsmat" class="img-overlay vertical-align">
+              <i class="fas fa-search-plus"></i> 
+              <h6 class="text-center">KungälvsMat</h6>
+              <p class="filter-title text-center">Web Design<p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <img src="assets/jw-thumb.png" class="img-fluid" alt="portfolio item John Wick">
-          <div class="img-overlay vertical-align">
-            <a href="john-wick.html"><i class="fas fa-search-plus"></i></a> 
-            <h6 class="text-center">Good Shepherd</h6>
-            <p class="filter-title text-center">Graphic Design<p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img src="assets/bf88-thumb.png" class="img-fluid" alt="portfolio item Black Future 88">
-          <div class="img-overlay vertical-align">
-            <a href="bf88.html"><i class="fas fa-search-plus"></i></a> 
-            <h6 class="text-center">Good Shepherd</h6>
-            <p class="filter-title text-center">Graphic Design<p>
+          <div class="col-md-4">
+            <img src="assets/jw-thumb.png" class="img-fluid" alt="portfolio item John Wick">
+            <div data-target="johnwick" class="img-overlay vertical-align">
+              <a href="john-wick.html"><i class="fas fa-search-plus"></i></a> 
+              <h6 class="text-center">Good Shepherd</h6>
+              <p class="filter-title text-center">Graphic Design<p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="assets/rapid-thumb.png" class="img-fluid" alt="portfolio item Rapid cobsulting">
-          <div class="img-overlay vertical-align">
-            <a href="rapid.html"><i class="fas fa-search-plus"></i></a> 
-            <h6 class="text-center">Rapid Consulting</h6>
-            <p class="filter-title text-center">Web Design<p>
+      
+
+      <!--Portfolio item KungälvsMat-->
+      <div id="kungalvsmat" class="container mb-5 portfolio-info" style="display: none;">
+        <div class="row py-2 justify-content-between">
+          <div class="col-md-4">
+              <h6>Web Design</h6>
+              <p>New website, film, photography and text production for 
+                KungälvsMat. An organization for locally produced foods and products 
+                from farms in Kungälv. The website also includes a form for placing orders.
+                The project is on going and involves regular updates every month. <br><br>
+                Visit the website here: <a href="https://kungalvsmat.se/" target="_blank">kungalvsmat.se</a>
+              </p>
+              <button class="button-green portfolio-close-button"> 
+                <i class="fas fa-angle-double-left"></i>
+                Close 
+              </button>
+            </div>
+            <div class="col-md-8 text-center">
+              <img class="img-fluid" src="assets/klvmat.png" alt="KungälvsMat screenshot">
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <img src="assets/fiskebacks-thumb.png" class="img-fluid" alt="portfolio item Rapid cobsulting">
-          <div class="img-overlay vertical-align">
-            <a href="#"><i class="fas fa-search-plus"></i></a> 
-            <h6 class="text-center">Fiskebäcks Byggnads</h6>
-            <p class="filter-title text-center">Web Design<p>
+
+        <!--Portfolio item John Wick-->
+        <div id="johnwick" class="container mb-5 portfolio-info" style="display: none;">
+          <div class="row py-2 justify-content-between">
+            <div class="col-md-4">
+                <h6>Graphic Design</h6>
+                <p>The John Wick Hex game was announced at a major event in New York and 
+                  received many awards during E3 in Los Angeles. I created a flyer for the 
+                  event in New York and a big roll up that was on display during E3. 
+                  John Wick Hex is a strategy game based on the action movies and character John Wick.
+                  Good Shepherd entertainment is a dutch/american computer game company.<br><br>
+                </p>
+                <button class="button-green portfolio-close-button"> 
+                  <i class="fas fa-angle-double-left"></i>
+                  Close 
+                </button>
+              </div>
+              <div class="col-md-8 text-center">
+                <img class="img-fluid" src="assets/jw.png" alt="John Wick Hex flyer"> 
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <img src="assets/bohuslan-thumb.png" class="img-fluid" alt="portfolio item Rapid cobsulting">
-          <div class="img-overlay vertical-align">
-            <a href="#"><i class="fas fa-search-plus"></i></a> 
-            <h6 class="text-center">Bohusläns Turistbyråer</h6>
-            <p class="filter-title text-center">Graphic Design<p>
-          </div>
-        </div>
-      </div>
-      <div class="row py-5">
-        <div class="col-md-12 text-center">
-          <a href="https://stonetwig.se/" target="_blank">
-            <button class="button-green">See more projects here 
-            <i class="fas fa-angle-double-right"></i>
-            </button>
-          </a>
-        </div>
-      </div>
+
+          <!--Portfolio item Black Future '88-->
+
+
+
+
     </div>
+  </div>
+</div>
   </div>
 
   <div id="contact" class="container mb-5">
