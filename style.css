@@ -28,7 +28,7 @@ body {
 }
 
 .hero {
-    height: 40rem;
+    height: 45rem;
     background-image: url(assets/bg1.png);
     background-position: center;
     background-size: cover;
@@ -77,6 +77,18 @@ p.skills-label {
     font-weight: 400;
     margin-top: 1.5rem;
     font-size: 0.8rem;
+}
+
+a {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #6aaca4;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .tag {
@@ -205,6 +217,25 @@ button.filter:hover {
     color: white;
 }
 
+button.button-green {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    background-color: #6aaca4;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+}
+
+button.button-green:hover {
+    background-color: white;
+    color:  #6aaca4;
+    border: 0.1rem solid #6aaca4;
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+}
+
 p.filter-title {
     margin-top: -0.2rem;
     font-weight: 400;
@@ -239,6 +270,10 @@ p.filter-title {
     padding: 0.5rem;
     border-radius: 50%;
     font-size: 1.5rem;
+}
+
+.img-fluid {
+    margin-bottom: 1rem;
 }
 
 @keyframes rotate {
