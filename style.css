@@ -292,8 +292,11 @@ p.filter-title {
     padding: 1.5rem 0;
 }
 
-#kungalvsmat {
-    
+.portfolio-info {
+    width: 100%;
+    transition: all 2s ease-in-out;
+}
+
 
 @keyframes rotate {
     0% {
