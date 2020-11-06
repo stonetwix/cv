@@ -181,9 +181,28 @@ hr.divider {
     color: #777;
 }
 
-#experience {
+.background-grey {
     background-color: #efefef88;
     padding-bottom: 5rem;
+}
+
+button.filter {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 5rem;
+    padding: 0.2rem 2rem;
+}
+
+button.filter:nth-child(2) {
+    margin: 0 1rem 0 1rem;
+}
+
+button.filter:hover {
+    background-color: black;
+    color: white;
 }
 
 
