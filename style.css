@@ -226,14 +226,13 @@ button.button-green {
     border: none;
     border-radius: 5rem;
     padding: 0.5rem 2rem;
+    border: 0.1rem solid #6aaca4;
 }
 
 button.button-green:hover {
     background-color: white;
     color:  #6aaca4;
     border: 0.1rem solid #6aaca4;
-    border-radius: 5rem;
-    padding: 0.5rem 2rem;
 }
 
 p.filter-title {
