@@ -297,6 +297,10 @@ p.filter-title {
     transition: all 2s ease-in-out;
 }
 
+#portfolio {
+    min-height: 65rem;
+}
+
 
 @keyframes rotate {
     0% {
