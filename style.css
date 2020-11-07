@@ -123,7 +123,6 @@ a:hover {
 
 .hero-text {
     z-index: 100;
-    position: absolute;
     margin-top: 14rem;
 }
 
@@ -221,6 +220,7 @@ button.button-green {
     font-weight: 400;
     font-size: 0.9rem;
     margin-top: 0.8rem;
+    margin-bottom: 1rem;
     background-color: #6aaca4;
     color: white;
     border: none;
@@ -253,6 +253,15 @@ p.filter-title {
     transition: all .5s;
     z-index: 10;
     transform: translateY(10px);    
+}
+
+.portfolio-info {
+    width: 100%;
+    transition: all 2s ease-in-out;
+}
+
+#portfolio {
+    min-height: 65rem;
 }
 
 .vertical-align {
@@ -292,15 +301,12 @@ p.filter-title {
     padding: 1.5rem 0;
 }
 
-.portfolio-info {
-    width: 100%;
-    transition: all 2s ease-in-out;
+@media (max-width: 768px) {
+    .contact:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
 }
-
-#portfolio {
-    min-height: 65rem;
-}
-
 
 @keyframes rotate {
     0% {
