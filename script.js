@@ -1,4 +1,4 @@
-window.onload = start;
+window.addEventListener('load', start);
 
 
 function start() {

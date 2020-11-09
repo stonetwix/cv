@@ -257,7 +257,14 @@ p.filter-title {
 
 .portfolio-info {
     width: 100%;
-    transition: all 2s ease-in-out;
+    display: none;
+    animation-name: fadeInSlide;
+    animation-duration: 2s;
+}
+
+#portfolio-items {
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
 #portfolio {
@@ -339,6 +346,28 @@ p.filter-title {
    
     100% {
         transform: rotateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        margin-left: -3rem;
+    }
+   
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+   
+    100% {
         opacity: 1;
     }
 }
