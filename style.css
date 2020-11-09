@@ -306,7 +306,16 @@ p.filter-title {
         border-right: none;
         border-left: none;
     }
+
+    .hero {
+        background-image: url(assets/bg1-small.png);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
 }
+
 
 @keyframes rotate {
     0% {
