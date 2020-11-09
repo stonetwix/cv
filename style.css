@@ -87,7 +87,7 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: #aaa;
     text-decoration: none;
 }
 
@@ -301,6 +301,16 @@ p.filter-title {
     padding: 1.5rem 0;
 }
 
+.social-bottom a {
+    color: #fff;
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+.social-bottom a:hover {
+    color: #6aaca4;
+}
+
 @media (max-width: 768px) {
     .contact:nth-child(2) {
         border-right: none;
@@ -313,6 +323,10 @@ p.filter-title {
 
     h1 {
         font-size: 2.5rem;
+    }
+
+    .bottom-row {
+        text-align: center;
     }
 }
 
