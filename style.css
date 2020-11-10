@@ -128,7 +128,6 @@ a:hover {
     animation-duration: 2s;
 }
 
-
 .title-wrapper {
     border-top: 0.1rem solid #bbb;
     border-bottom: 0.1rem solid #bbb;
@@ -342,8 +341,14 @@ p.filter-title {
     .navbar-brand {
         font-size: 1rem;
     }
+
 }
 
+@media (max-width: 1024px) {
+    #portfolio {
+        min-height: unset;
+    }
+}
 
 @keyframes rotate {
     0% {
