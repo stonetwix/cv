@@ -32,7 +32,6 @@ function addEventListeners() {
 };
 
 /** Sets timeout on progress bars on scroll */
-
 $(document).on('scroll', function() {
     setTimeout(moveProgressBars, 800);
 });

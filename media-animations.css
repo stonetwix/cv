@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+    .contact:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
+    .hero {
+        background-image: url(assets/bg1-small.png);
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .bottom-row {
+        text-align: center;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    #portfolio {
+        min-height: unset;
+    }
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        margin-left: -3rem;
+    }
+   
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+   
+    100% {
+        opacity: 1;
+    }
+}
