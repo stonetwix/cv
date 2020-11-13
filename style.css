@@ -216,7 +216,8 @@ p.portfolio-tag {
     opacity: 0;
     transition: all .5s;
     z-index: 10;
-    transform: translateY(10px);    
+    transform: translateY(10px);
+    cursor: pointer; 
 }
 
 .portfolio-info {
